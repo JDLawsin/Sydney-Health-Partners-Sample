@@ -1,17 +1,13 @@
-import Header from "@/shared/components/layout/Header";
-
 const Home = () => {
   return (
     <div className="min-h-screen">
-      <Header />
-
       <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="space-y-8">
           <h1 className="text-3xl font-bold text-foreground">
             {"Welcome to Sydney Health Partners"}
           </h1>
           <p className="text-muted-foreground max-w-2xl">
-            {"Scroll down to see the sticky header in action"}.
+            {"Sydney Health Partners in action."}
           </p>
 
           {Array.from({ length: 10 }).map((_, i) => (

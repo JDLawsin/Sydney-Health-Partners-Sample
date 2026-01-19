@@ -11,7 +11,10 @@ const DesktopNavBar = ({ items, activeHref }: Props) => {
       <ul className="flex items-center gap-8">
         {items.map((item) => (
           <li key={item.href}>
-            <NavLink item={item} isActive={activeHref === item.href} />
+            <NavLink
+              item={item}
+              isActive={activeHref?.startsWith(item.href) || false}
+            />
           </li>
         ))}
       </ul>
